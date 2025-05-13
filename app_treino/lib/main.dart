@@ -16,33 +16,59 @@ class _PaginaInicialState extends State<PaginaInicial> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Text("Treinos"),
-        leading: Icon(Icons.sports_gymnastics_rounded),
-        actions: [IconButton(onPressed: () {}, icon: Text("Meus Treinos"))],
+        title: Text("App de treino pro Heitor ficar sheipado"),
+        leading: Icon(Icons.fitness_center, size: 45.0),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: Text(
+              "Meus Treinos",
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15.0),
+            ),
+          ),
+        ],
       ),
       body: ListView(
         children: [
-          Container(
-            child: Center(
-              child: Text(
-                "STATUS",
-                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
-              ),
+          Center(
+            child: Text(
+              "STATUS",
+              style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold),
             ),
           ),
-          Container(
-            child: ListView(
-              children: [
-                Center(
-                  child: Text(
-                    "status",
-                    style: TextStyle(
-                      fontSize: 20.0,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-              ],
+          SizedBox(height: 100),
+          Center(
+            child: Text(
+              "Exercícios segunda:",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(height: 20),
+          Center(
+            child: Text(
+              "Exercícios terça:",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(height: 20),
+          Center(
+            child: Text(
+              "Exercícios quarta:",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(height: 20),
+          Center(
+            child: Text(
+              "Exercícios quinta:",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+            ),
+          ),
+          SizedBox(height: 20),
+          Center(
+            child: Text(
+              "Exercícios sexta:",
+              style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
             ),
           ),
         ],
