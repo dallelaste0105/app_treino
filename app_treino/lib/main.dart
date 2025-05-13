@@ -20,19 +20,34 @@ class _PaginaInicialState extends State<PaginaInicial> {
         leading: Icon(Icons.sports_gymnastics_rounded),
         actions: [IconButton(onPressed: () {}, icon: Text("Meus Treinos"))],
       ),
-      body: Center(
-        child: ListView(
-          children: [
-            Text("Status"),
-            Text("Status"),
-            Text("Status"),
-            Text("Status"),
-            Text("Status"),
-            Text("Status"),
-            Text("Status"),
-          ],
-        ),
+      body: ListView(
+        children: [
+          Container(
+            child: Center(
+              child: Text(
+                "STATUS",
+                style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+              ),
+            ),
+          ),
+          Container(
+            child: ListView(
+              children: [
+                Center(
+                  child: Text(
+                    "status",
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ],
       ),
+
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.blue,
         onPressed: () {
